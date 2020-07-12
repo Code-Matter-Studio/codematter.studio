@@ -40,7 +40,10 @@
               "src/assets/plugin/appear/jquery.appear.js",
               "src/assets/plugin/bootstrap/js/popper.min.js",
               "src/assets/plugin/bootstrap/js/bootstrap.js",
-              "src/assets/js/custom.js"
+              "src/assets/js/custom.js",
+              {
+                "input": "src/assets/js/custom.js"
+              }
             ]
           },
           "configurations": {

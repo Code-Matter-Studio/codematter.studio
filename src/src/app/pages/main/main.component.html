@@ -1,7 +1,8 @@
 <!-- Home Banner -->
 <section id="home" class="effect-section gray-bg">
   <div class="effect theme-bg effect-skew"></div>
-  <div class="particles-box" id="particles-box"></div>
+  <!-- <div class="particles-box" id="particles-box"></div> -->
+  <particles [params]="myParams" [style]="myStyle"></particles>
   <div class="container container-large">
     <div class="row full-screen align-items-center p-100px-tb">
       <div class="col-12 col-lg-5 col-xl-4 p-50px-tb">
@@ -168,8 +169,8 @@
           How do we create amazing products
         </h3>
         <p class="m-0px font-2">
-          Mombo is a HTML5 template based on Sass and Bootstrap 4 with modern
-          and creative multipurpose design you can use it as a startups.
+          Our team is eager to help your company to optimize business processes
+          and to solve issues that occur every day
         </p>
       </div>
     </div>
@@ -177,25 +178,33 @@
       <ul class="nav nav-fill nav-tabs">
         <li class="nav-item">
           <a href="#tab3_sec1" data-toggle="tab" class="active">
-            <div class="icon"><i class="icon-chat"></i></div>
+            <div class="icon">
+              <i class="fas fa-comments" style="font-weight: 100;"></i>
+            </div>
             <span>Discussion</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#tab3_sec2" data-toggle="tab">
-            <div class="icon"><i class="icon-tools"></i></div>
+            <div class="icon">
+              <i class="fas fa-file-code" style="font-weight: 100;"></i>
+            </div>
             <span>Development</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#tab3_sec3" data-toggle="tab">
-            <div class="icon"><i class="icon-genius"></i></div>
+            <div class="icon">
+              <i class="fas fa-life-ring" style="font-weight: 100;"></i>
+            </div>
             <span>Support</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#tab3_sec4" data-toggle="tab">
-            <div class="icon"><i class="icon-heart"></i></div>
+            <div class="icon">
+              <i class="fas fa-heart" style="font-weight: 100;"></i>
+            </div>
             <span>Happy Client</span>
           </a>
         </li>
@@ -214,33 +223,11 @@
             </div>
             <div class="col-lg-6">
               <div class="p-70px-l lg-p-0px-l lg-m-30px-t">
-                <h2 class="h1 m-25px-b">
-                  Welcome to Mombo
-                  <u class="theme-color">Digital Marketing</u>
-                </h2>
                 <p class="m-5px-b">
-                  Mombo is a HTML5 template based on Sass and Bootstrap 4 with
-                  modern and creative multipurpose design you can use it as a
-                  startups. Ut enim ad minim veniam.
+                  Share your problems or tell us about your ideas. We will think
+                  about the plan to cover all your needs, deadlines and way to
+                  show you the progress
                 </p>
-                <div class="row">
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">Mobile Friendly</h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">
-                      Multiple Layouts
-                    </h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                </div>
                 <!-- row -->
               </div>
             </div>
@@ -252,38 +239,20 @@
           <div class="row align-items-center p-25px-t md-p-15px-t">
             <div class="col-lg-6">
               <div class="p-70px-r lg-p-0px-r lg-m-30px-t">
-                <h2 class="h1 m-25px-b">
-                  Welcome to Mombo
-                  <u class="theme-color">Digital Marketing</u>
-                </h2>
                 <p class="m-5px-b">
-                  Mombo is a HTML5 template based on Sass and Bootstrap 4 with
-                  modern and creative multipurpose design you can use it as a
-                  startups. Ut enim ad minim veniam.
+                  Step by step, we will accomplish tasks and you will see the
+                  progress during the whole development process
                 </p>
-                <div class="row">
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">Mobile Friendly</h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">
-                      Multiple Layouts
-                    </h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                </div>
                 <!-- row -->
               </div>
             </div>
             <div class="col-lg-6 order-lg-2 order-first text-center">
-              <img src="assets/img/500x500.jpg" title="" alt="" />
+              <img
+                src="assets/img/home-5-b1.svg"
+                title=""
+                alt=""
+                height="500"
+              />
             </div>
           </div>
         </div>
@@ -301,33 +270,11 @@
             </div>
             <div class="col-lg-6">
               <div class="p-70px-l lg-p-0px-l lg-m-30px-t">
-                <h2 class="h1 m-25px-b">
-                  Welcome to Mombo
-                  <u class="theme-color">Digital Marketing</u>
-                </h2>
                 <p class="m-5px-b">
-                  Mombo is a HTML5 template based on Sass and Bootstrap 4 with
-                  modern and creative multipurpose design you can use it as a
-                  startups. Ut enim ad minim veniam.
+                  We provide guarantee and technical support for our products so
+                  that you will be sure that even after launching the product
+                  will be stable and working efficiently
                 </p>
-                <div class="row">
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">Mobile Friendly</h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">
-                      Multiple Layouts
-                    </h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                </div>
                 <!-- row -->
               </div>
             </div>
@@ -339,38 +286,15 @@
           <div class="row align-items-center p-25px-t md-p-15px-t">
             <div class="col-lg-6">
               <div class="p-70px-r lg-p-0px-r lg-m-30px-t">
-                <h2 class="h1 m-25px-b">
-                  Welcome to Mombo
-                  <u class="theme-color">Digital Marketing</u>
-                </h2>
                 <p class="m-5px-b">
-                  Mombo is a HTML5 template based on Sass and Bootstrap 4 with
-                  modern and creative multipurpose design you can use it as a
-                  startups. Ut enim ad minim veniam.
+                  We have completed different projects and all our clients are
+                  happy with what we have done. Our main goal is creating robust
+                  applications that fit your needs and could boost your business
                 </p>
-                <div class="row">
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">Mobile Friendly</h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                  <div class="col-md-6 m-15px-tb">
-                    <h5 class="theme-color h6 m-10px-b">
-                      Multiple Layouts
-                    </h5>
-                    <p class="m-0px">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </p>
-                  </div>
-                  <!-- col -->
-                </div>
-                <!-- row -->
               </div>
             </div>
             <div class="col-lg-6 order-lg-2 order-first text-center">
-              <img src="assets/img/500x500.jpg" title="" alt="" />
+              <img src="assets/img/cat-v2-7.svg" title="" alt="" height="500" />
             </div>
           </div>
         </div>
@@ -604,13 +528,7 @@
         >
           <h5 class="font-1 white-color m-10px-b">Our Address Info</h5>
           <p class="white-color-light m-30px-b">
-            301 The Greenhouse London, E2 8DY UK
-          </p>
-          <h5 class="font-1 white-color m-10px-b">Our Contact Info</h5>
-          <p class="m-5px-b">
-            <a class="white-color-light" href="mailto:support@codematter.studio"
-              >support@domain.com</a
-            >
+            We are temporarily working online
           </p>
         </div>
       </div>

@@ -151,16 +151,6 @@
     }
   }
 
-  /*--------------------
-        * particles
-    ----------------------*/
-  THE.particles = function () {
-    if ($('#particles-box').exists()) {
-      loadScript(plugin_track + 'particles/particles.min.js', function () {})
-      loadScript(plugin_track + 'particles/particles-app.js', function () {})
-    }
-  }
-
   /*-----------------------
     * Cookis
     -------------------------*/
@@ -212,7 +202,6 @@
         THE.OnePage(),
         THE.MenuClose(),
         THE.HeaderHeight(),
-        THE.particles(),
         THE.Cookis(),
         THE.Owl()
     }, 1500)

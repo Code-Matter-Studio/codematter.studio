@@ -1,5 +1,5 @@
 <!-- Preload -->
-<div id="loading">
+<div id="loading" *ngIf="loading">
   <div class="load-circle"><span class="one"></span></div>
 </div>
 <!-- End Preload -->
@@ -10,24 +10,11 @@
       <div class="navbar navbar-default navbar-expand-lg main-navbar">
         <div class="navbar-brand">
           <a title="Mombo" class="logo">
-            <img
-              src="assets/img/logo-light.svg"
-              class="light-logo"
-              alt="Mombo"
-              title=""
-            />
-            <img
-              src="assets/img/logo.svg"
-              class="dark-logo"
-              alt="Mombo"
-              title=""
-            />
+            <img src="assets/img/logo-white.png" class="light-logo" alt="Mombo" title="" height="48" />
+            <img src="assets/img/logo-black.png" class="dark-logo" alt="Mombo" title="" height="48" />
           </a>
         </div>
-        <div
-          class="navbar-collapse justify-content-end collapse"
-          id="navbar-collapse-toggle"
-        >
+        <div class="navbar-collapse justify-content-end collapse" id="navbar-collapse-toggle">
           <ul class="nav navbar-nav m-auto">
             <li><a class="nav-link" href="#services">Services</a></li>
             <li><a class="nav-link" href="#process">Process</a></li>
@@ -63,18 +50,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 text-center text-md-right">
-          <ul
-            class="nav justify-content-center justify-content-md-start m-5px-tb links-white font-small footer-link-1"
-          >
+          <ul class="nav justify-content-center justify-content-md-start m-5px-tb links-white font-small footer-link-1">
             <li>
-              <a href="/policy">Privace &amp; Policy</a>
+              <a routerLink="/policy">Privace &amp; Policy</a>
+            </li>
+            <li>
+              <a routerLink="/blog">Blog</a>
             </li>
           </ul>
         </div>
         <div class="col-md-6 text-center text-md-right">
-          <p class="m-0px font-small white-color-light">
-            © {{ currentYear }} Code Matter Studio
-          </p>
+          <p class="m-0px font-small white-color-light">© {{ currentYear }} Code Matter Studio</p>
         </div>
       </div>
     </div>

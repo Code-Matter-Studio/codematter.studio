@@ -6,24 +6,28 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174106305-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+    </script>
   </head>
-  <body
-    data-spy="scroll"
-    data-target="#navbar-collapse-toggle"
-    data-offset="98"
-  >
+  <body data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="98">
     <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
     <script>
-      ;(function () {
-        var redirect = sessionStorage.redirect
-        delete sessionStorage.redirect
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect)
+          history.replaceState(null, null, redirect);
         }
-      })()
+      })();
     </script>
-    <!-- /Github Pages hack. -->
-
     <app-root></app-root>
   </body>
 </html>

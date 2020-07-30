@@ -12,13 +12,6 @@
     return this.length > 0
   }
 
-  /* ---------------------------------------------- /*
-	 * Pre load
-	/* ---------------------------------------------- */
-  THE.PreLoad = function () {
-    document.getElementById('loading').style.display = 'none'
-  }
-
   /*--------------------
         * Menu Close
     ----------------------*/
@@ -191,10 +184,6 @@
     }
   }
 
-  // Window on Load
-  $(window).on('load', function () {
-    THE.PreLoad()
-  })
   // Document on Ready
   $(document).on('ready', function () {
     setTimeout(function () {

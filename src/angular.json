@@ -32,6 +32,8 @@
               "src/assets/plugin/owl-carousel/css/owl.carousel.css",
               "src/assets/plugin/magnific/magnific-popup.css",
               "node_modules/ngx-toastr/toastr.css",
+              "node_modules/prismjs/themes/prism-okaidia.css",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
               "src/assets/style/master.css",
               "src/styles.scss"
             ],
@@ -41,6 +43,10 @@
               "src/assets/plugin/appear/jquery.appear.js",
               "src/assets/plugin/bootstrap/js/popper.min.js",
               "src/assets/plugin/bootstrap/js/bootstrap.js",
+              "node_modules/marked/lib/marked.js",
+              "node_modules/prismjs/prism.js",
+              "node_modules/prismjs/components/prism-csharp.min.js",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
               "src/assets/js/custom.js",
               {
                 "input": "src/assets/js/custom.js"
@@ -110,11 +116,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
+            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
             "exclude": ["**/node_modules/**"]
           }
         },

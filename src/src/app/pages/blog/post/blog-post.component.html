@@ -1,0 +1,41 @@
+<!-- Page Title -->
+<section class="section bg-center bg-fixed effect-section" style="background-image: url(assets/img/space-pattern.jpg);">
+  <div class="mask theme-bg opacity-9"></div>
+  <div class="container">
+    <div class="row justify-content-center p-50px-t">
+      <div class="col-lg-8 text-center">
+        <h2 class="white-color h1 m-20px-b">{{ dataItem.title }}</h2>
+        <ol class="breadcrumb white justify-content-center">
+          <li><a href="/">Home</a></li>
+          <li><a routerLink="/blog">Blog</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Page Title -->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <markdown>
+              {{ dataItem.content }}
+            </markdown>
+          </div>
+        </div>
+
+        <div class="media gray-bg p-20px m-45px-t">
+          <div class="media-body p-20px-l">
+            <h5 class="m-10px-b">{{ dataItem.author.fullName }}</h5>
+            <p class="m-0px">
+              {{ dataItem.author.about }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

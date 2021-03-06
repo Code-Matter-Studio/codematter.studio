@@ -442,6 +442,18 @@
                   ></textarea>
                 </div>
               </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <re-captcha
+                    name="reCaptcha"
+                    formControlName="reCaptcha"
+                    required
+                    (resolved)="reCaptchaResolved($event)"
+                    [siteKey]="reCAPTCHASiteKey"
+                  ></re-captcha>
+                </div>
+              </div>
+              
               <div class="col-md-12 p-10px-t">
                 <button
                   class="m-btn m-btn-theme m-btn-radius"
@@ -509,6 +521,15 @@
                 rel="noopener"
                 noreferrer
                 ><img src="assets/img/client4.png" title="" alt=""
+              /></a>
+            </div>
+            <div class="grayscale-hover">
+              <a
+                href="https://commacc.ru"
+                target="_blank"
+                rel="noopener"
+                noreferrer
+                ><img src="assets/img/client5.png" title="" alt=""
               /></a>
             </div>
           </div>

@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.1.12",
     "@angular/router": "~9.1.12",
     "moment": "^2.26.0",
+    "ng-recaptcha": "^7.0.1",
     "ngx-markdown": "^10.1.0",
     "ngx-particle": "^1.5.0",
     "ngx-toastr": "^13.0.0",

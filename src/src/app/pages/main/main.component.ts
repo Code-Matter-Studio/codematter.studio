@@ -3,18 +3,24 @@ import { FormGroup, FormControl } from '@angular/forms'
 import { HttpClient } from '@angular/common/http'
 import { ToastrService } from 'ngx-toastr'
 
+// Environments
+import { environment } from '@env/environment';
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
+  public reCAPTCHASiteKey = environment.reCAPTCHASiteKey;
+
   constructor(private http: HttpClient, private toastr: ToastrService) {}
 
   contactUsForm = new FormGroup({
     name: new FormControl(''),
     email: new FormControl(''),
     message: new FormControl(''),
+    reCaptcha: new FormControl(''),
   })
 
   myStyle: object = {}
@@ -150,6 +156,10 @@ export class MainComponent {
     }
   }
 
+  reCaptchaResolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
+
   onSubmit() {
     const chatId = -1001223983245
     const botId = '1393160245:AAE2XHT_apqu5xGlkZ3vWx-QZwgN1zCQBzE'
@@ -161,7 +171,9 @@ export class MainComponent {
           '/sendMessage?chat_id=' +
           chatId +
           '&parse_mode=html&text=' +
-          encodeURI(JSON.stringify(this.contactUsForm.value)),
+          encodeURI(JSON.stringify({ Name:  this.contactUsForm.value.name,
+                                     Email:  this.contactUsForm.value.email,
+                                     Message: this.contactUsForm.value.message })),
         this.contactUsForm.value
       )
       .subscribe(

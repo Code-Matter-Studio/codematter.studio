@@ -18,6 +18,7 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
+    "nuxt-i18n": "^6.27.2",
     "nuxt-lazy-load": "^1.2.6"
   },
   "devDependencies": {

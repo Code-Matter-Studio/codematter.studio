@@ -10,7 +10,11 @@
           <div class="col-lg-8 text-center">
             <h2 class="white-color h1 m-20px-b">{{ article.title }}</h2>
             <ol class="breadcrumb white justify-content-center">
-              <li><NuxtLink to="/articles">Go to other articles</NuxtLink></li>
+              <li>
+                <NuxtLink :to="localePath('articles')">{{
+                  $t('links.go_to_other_articles')
+                }}</NuxtLink>
+              </li>
             </ol>
           </div>
         </div>

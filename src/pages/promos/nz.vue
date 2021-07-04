@@ -9,7 +9,9 @@
             for productive relationships with you.
           </p>
           <div class="btn-bar p-25px-t">
-            <NuxtLink to="/contact" class="m-btn m-btn-white m-btn-radius"
+            <NuxtLink
+              :to="localePath('contact')"
+              class="m-btn m-btn-white m-btn-radius"
               >Start Now!</NuxtLink
             >
           </div>

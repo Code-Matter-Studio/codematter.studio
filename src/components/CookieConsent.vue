@@ -2,11 +2,13 @@
   <div v-if="show" class="cookie-consent" role="dialog">
     <div class="herbyCookieConsent herbyIn">
       <slot name="message">
-        {{ message }}
+        {{ $t('cookie_consent.text') }}
       </slot>
 
       <slot name="button">
-        <a class="herbyBtn" @click="dismiss">{{ buttonLabel }}</a>
+        <a class="herbyBtn" @click="dismiss">{{
+          $t('cookie_consent.button')
+        }}</a>
       </slot>
     </div>
   </div>
@@ -16,15 +18,6 @@
 export default {
   name: 'CookieConsent',
   props: {
-    message: {
-      type: String,
-      default:
-        'We are using cookies on all our websites including this one because without cookies the entire Internet would go to shit.',
-    },
-    buttonLabel: {
-      type: String,
-      default: 'Fine',
-    },
     href: {
       type: String,
       default: 'http://cookiesandyou.com',

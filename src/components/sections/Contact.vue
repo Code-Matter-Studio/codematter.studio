@@ -4,30 +4,28 @@
       <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
         <div class="col-lg-8">
           <h3 class="h1 m-20px-b p-20px-b theme-after after-50px">
-            Let's start working together
+            {{ $t('contact_section.title') }}
           </h3>
           <p class="m-0px font-2">
-            Whether you have a question about services, technologies, studio, or
-            anything else, we are ready to answer all your questions
+            {{ $t('contact_section.description') }}
           </p>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-8 col-xl-8 m-15px-tb">
           <div class="white-bg box-shadow p-30px">
-            <div class="p-20px-b">
-              <h5 class="m-0px">Contact Us</h5>
-            </div>
             <b-form @submit="onSubmit" v-if="show">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label class="form-control-label">Name</label>
+                    <label class="form-control-label">{{
+                      $t('contact_section.name_input')
+                    }}</label>
                     <input
                       id="name"
                       v-model="form.name"
                       type="text"
-                      placeholder="Name"
+                      :placeholder="$t('contact_section.name_input')"
                       class="form-control"
                       required
                     />
@@ -35,12 +33,14 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label class="form-control-label">Email address</label>
+                    <label class="form-control-label">{{
+                      $t('contact_section.email_input')
+                    }}</label>
                     <input
                       id="email"
                       v-model="form.email"
                       type="email"
-                      placeholder="Email"
+                      :placeholder="$t('contact_section.email_input')"
                       class="form-control"
                       required
                     />
@@ -48,12 +48,14 @@
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <label class="form-control-label">Message</label>
+                    <label class="form-control-label">{{
+                      $t('contact_section.message_input')
+                    }}</label>
                     <textarea
                       id="message"
                       v-model="form.message"
                       type="text"
-                      placeholder="Message"
+                      :placeholder="$t('contact_section.message_input')"
                       class="form-control"
                       rows="3"
                       required
@@ -72,7 +74,7 @@
                     type="submit"
                     name="send"
                   >
-                    Send
+                    {{ $t('contact_section.send_button') }}
                   </button>
                   <div class="snackbars" id="form-output-global"></div>
                 </div>
@@ -90,16 +92,20 @@
               h-100
             "
           >
-            <h5 class="font-1 white-color m-10px-b">Our Address Info</h5>
+            <h5 class="font-1 white-color m-10px-b">
+              {{ $t('contact_section.address_info_title') }}
+            </h5>
             <p class="white-color-light m-30px-b">
-              We are temporarily working online
+              {{ $t('contact_section.address_info_text') }}
             </p>
-            <h5 class="font-1 white-color m-10px-b">Our Contact Info</h5>
+            <h5 class="font-1 white-color m-10px-b">
+              {{ $t('contact_section.contact_info_title') }}
+            </h5>
             <p class="m-5px-b">
               <a
                 class="white-color-light"
                 href="mailto:contact@codematter.studio"
-                >contact@codematter.studio</a
+                >{{ $t('contact_section.contact_info_text') }}</a
               >
             </p>
           </div>

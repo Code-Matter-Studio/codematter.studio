@@ -10,7 +10,9 @@
           <div class="col-lg-8 text-center">
             <h2 class="white-color h1 m-20px-b">Privace &amp; Policy</h2>
             <ol class="breadcrumb white justify-content-center">
-              <li><NuxtLink to="/">Go the main page</NuxtLink></li>
+              <li>
+                <NuxtLink :to="localePath('/')">{{ $t('links.go_to_the_main_page') }}</NuxtLink>
+              </li>
             </ol>
           </div>
         </div>

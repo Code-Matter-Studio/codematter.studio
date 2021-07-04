@@ -162,14 +162,6 @@ public class ItemController : ControllerBase
 }
 ```
 
-## Code of Conduct
-
-See [CODE_OF_CONDUCT.md](https://github.com/sayganov/EventBus.RabbitMQ.Standard/blob/master/CODE_OF_CONDUCT.md).
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/sayganov/EventBus.RabbitMQ.Standard/blob/master/CONTRIBUTING.md).
-
 ## References
 
 - [Publisher-Subscriber pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/publisher-subscriber)

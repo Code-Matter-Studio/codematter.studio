@@ -15,16 +15,33 @@
               "
             >
               <li>
-                <NuxtLink to="/">Home</NuxtLink>
+                <a
+                  href=""
+                  v-for="locale in availableLocales"
+                  :key="locale.code"
+                  @click.prevent.stop="$i18n.setLocale(locale.code)"
+                  >{{ locale.name }}</a
+                >
               </li>
               <li>
-                <NuxtLink to="/policy">Privace &amp; Policy</NuxtLink>
+                <NuxtLink :to="localePath('/')">
+                  {{ $t('links.home') }}
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/contact">Contact</NuxtLink>
+                <NuxtLink :to="localePath('policy')">
+                  {{ $t('links.policy') }}
+                </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="/articles">Articles</NuxtLink>
+                <NuxtLink :to="localePath('contact')">
+                  {{ $t('links.contact') }}</NuxtLink
+                >
+              </li>
+              <li>
+                <NuxtLink :to="localePath('articles')">
+                  {{ $t('links.articles') }}</NuxtLink
+                >
               </li>
             </ul>
           </div>
@@ -38,3 +55,13 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
+}
+</script>

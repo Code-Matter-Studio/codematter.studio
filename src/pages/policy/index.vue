@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="full-screen">
     <section
       class="section bg-center bg-fixed effect-section"
       :style="{ backgroundImage: `url(${spacePatterImg})` }"
@@ -8,10 +8,14 @@
       <div class="container">
         <div class="row justify-content-center p-50px-t">
           <div class="col-lg-8 text-center">
-            <h2 class="white-color h1 m-20px-b">Privace &amp; Policy</h2>
+            <h2 class="white-color h1 m-20px-b">
+              {{ $t('policy_page.title') }}
+            </h2>
             <ol class="breadcrumb white justify-content-center">
               <li>
-                <NuxtLink :to="localePath('/')">{{ $t('links.go_to_the_main_page') }}</NuxtLink>
+                <NuxtLink :to="localePath('/')">{{
+                  $t('links.go_to_the_main_page')
+                }}</NuxtLink>
               </li>
             </ol>
           </div>

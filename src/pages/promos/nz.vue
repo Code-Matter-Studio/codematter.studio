@@ -1,5 +1,8 @@
 <template>
-  <section class="effect-section" :style="{ backgroundImage: `url(${bgImg})` }">
+  <section
+    :style="{ backgroundImage: `url(${bgImg})` }"
+    style="background-repeat: round"
+  >
     <div class="container container-large">
       <div class="row full-screen align-items-center justify-content-between">
         <div class="col-lg-6 m-50px-tb">

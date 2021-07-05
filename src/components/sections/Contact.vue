@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="section gray-bg">
+  <section id="contact" class="section gray-bg full-screen">
     <div class="container">
       <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
         <div class="col-lg-8">
@@ -11,6 +11,7 @@
           </p>
         </div>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-8 col-xl-8 m-15px-tb">
           <div class="white-bg box-shadow p-30px">

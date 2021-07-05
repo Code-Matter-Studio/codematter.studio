@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="full-screen">
     <section
       class="section bg-center bg-fixed effect-section"
       :style="{ backgroundImage: `url(${spacePatterImg})` }"

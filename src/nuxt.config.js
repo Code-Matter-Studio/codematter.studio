@@ -131,6 +131,12 @@ export default {
             contact_info_title: 'Our Contact Info',
             contact_info_text: 'contact@codematter.studio',
           },
+          policy_page: {
+            title: 'Privacy & Policy',
+          },
+          articles_page: {
+            title: 'Articles',
+          },
         },
         ru: {
           links: {
@@ -169,6 +175,12 @@ export default {
             contact_info_title: 'Наши контакты',
             contact_info_text: 'contact@codematter.studio',
           },
+          policy_page: {
+            title: 'Конфиденциальность',
+          },
+          articles_page: {
+            title: 'Статьи',
+          },          
         },
       },
     },
